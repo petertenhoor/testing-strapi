@@ -1,0 +1,11 @@
+.DS_Store
+.Vagrantfile.swp
+thumbs.db
+node_modules
+.vagrant/
+.idea
+.tmp
+.env
+.next
+*.log
+*.sql
