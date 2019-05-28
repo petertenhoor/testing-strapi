@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/talks",
+      "handler": "Talk.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/talks/count",
+      "handler": "Talk.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/talks/:_id",
+      "handler": "Talk.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/talks",
+      "handler": "Talk.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/talks/:_id",
+      "handler": "Talk.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/talks/:_id",
+      "handler": "Talk.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

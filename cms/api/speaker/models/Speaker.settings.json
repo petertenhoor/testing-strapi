@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "speaker",
+  "info": {
+    "name": "speaker",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "speaker_name": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "speaker_photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "speaker_biography": {
+      "type": "text"
+    },
+    "talks": {
+      "collection": "talk",
+      "via": "speakers"
+    },
+    "speaker_job": {
+      "type": "string"
+    }
+  }
+}

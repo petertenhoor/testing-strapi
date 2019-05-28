@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "event",
+  "info": {
+    "name": "event",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "event_title": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "event_date": {
+      "required": true,
+      "type": "date"
+    },
+    "event_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "talks": {
+      "collection": "talk",
+      "dominant": true,
+      "via": "events"
+    }
+  }
+}

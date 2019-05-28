@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "talk",
+  "info": {
+    "name": "talk",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "talk_name": {
+      "type": "string"
+    },
+    "talk_description": {
+      "type": "text"
+    },
+    "talk_time": {
+      "required": true,
+      "type": "date"
+    },
+    "speakers": {
+      "collection": "speaker",
+      "via": "talks",
+      "dominant": true
+    },
+    "events": {
+      "collection": "event",
+      "via": "talks"
+    }
+  }
+}
