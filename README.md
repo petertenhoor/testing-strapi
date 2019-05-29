@@ -1,5 +1,7 @@
 # testing-strapi
-Testing Strapi alpha version to create a node.js driven CMS with GraphQL API.
+
+- Testing Strapi alpha version to create a node.js driven CMS with GraphQL API.
+- Built a simple React Native app with some routes to display Strapi data 
 
 ## Strapi
 
@@ -98,3 +100,5 @@ Post body:
   }
 }
 ```
+
+## App (React Native)
